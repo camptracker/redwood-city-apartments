@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Apartments in Redwood City, CA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+            padding: 40px 20px;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .apartments-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .apartment-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .apartment-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+        
+        .card-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+        }
+        
+        .card-header h2 {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+        
+        .card-header .address {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        .card-body {
+            padding: 20px;
+        }
+        
+        .gallery {
+            margin-bottom: 20px;
+        }
+        
+        .gallery h3 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .photo-grid img {
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        
+        .photo-grid img:hover {
+            transform: scale(1.05);
+        }
+        
+        .links {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .btn {
+            flex: 1;
+            padding: 12px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .btn-website {
+            background: #667eea;
+            color: white;
+        }
+        
+        .btn-website:hover {
+            background: #5568d3;
+        }
+        
+        .btn-maps {
+            background: #34a853;
+            color: white;
+        }
+        
+        .btn-maps:hover {
+            background: #2d8e47;
+        }
+        
+        .status-pending {
+            color: #f59e0b;
+            font-size: 0.9rem;
+            margin-top: 10px;
+            font-style: italic;
+        }
+        
+        footer {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            opacity: 0.8;
+        }
+        
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+        }
+        
+        .lightbox.active {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏢 Luxury Apartments</h1>
+            <p class="subtitle">Redwood City, California</p>
+        </header>
+        
+        <div class="apartments-grid" id="apartments-grid">
+            <!-- Apartments will be loaded here by JavaScript -->
+        </div>
+        
+        <footer>
+            <p>Data collected April 2026</p>
+        </footer>
+    </div>
+    
+    <div class="lightbox" id="lightbox">
+        <img id="lightbox-img" src="" alt="">
+    </div>
+    
+    <script>
+        // Load apartments data
+        fetch('apartments.json')
+            .then(response => response.json())
+            .then(apartments => {
+                const grid = document.getElementById('apartments-grid');
+                
+                apartments.forEach(apt => {
+                    const card = document.createElement('div');
+                    card.className = 'apartment-card';
+                    
+                    let amenitiesHTML = '';
+                    if (apt.amenities && apt.amenities.length > 0) {
+                        amenitiesHTML = `
+                            <div class="gallery">
+                                <h3>🏊 Amenities</h3>
+                                <div class="photo-grid">
+                                    ${apt.amenities.map(photo => `
+                                        <img src="images/${apt.id}/amenities/${photo}" alt="Amenity" onclick="openLightbox(this.src)">
+                                    `).join('')}
+                                </div>
+                            </div>
+                        `;
+                    }
+                    
+                    let floorPlansHTML = '';
+                    if (apt.floorPlans && apt.floorPlans.length > 0) {
+                        floorPlansHTML = `
+                            <div class="gallery">
+                                <h3>📐 Floor Plans</h3>
+                                <div class="photo-grid">
+                                    ${apt.floorPlans.map(photo => `
+                                        <img src="images/${apt.id}/floorplans/${photo}" alt="Floor Plan" onclick="openLightbox(this.src)">
+                                    `).join('')}
+                                </div>
+                            </div>
+                        `;
+                    }
+                    
+                    let statusHTML = '';
+                    if (apt.status === 'pending') {
+                        statusHTML = '<p class="status-pending">⏳ Data collection in progress...</p>';
+                    }
+                    
+                    card.innerHTML = `
+                        <div class="card-header">
+                            <h2>${apt.name}</h2>
+                            <p class="address">${apt.address}</p>
+                        </div>
+                        <div class="card-body">
+                            ${amenitiesHTML}
+                            ${floorPlansHTML}
+                            ${statusHTML}
+                            <div class="links">
+                                <a href="${apt.website}" target="_blank" class="btn btn-website">🌐 Website</a>
+                                <a href="${apt.googleMapsUrl}" target="_blank" class="btn btn-maps">📍 Maps</a>
+                            </div>
+                        </div>
+                    `;
+                    
+                    grid.appendChild(card);
+                });
+            })
+            .catch(error => console.error('Error loading apartments:', error));
+        
+        // Lightbox functionality
+        function openLightbox(src) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox').classList.add('active');
+        }
+        
+        document.getElementById('lightbox').addEventListener('click', function() {
+            this.classList.remove('active');
+        });
+    </script>
+</body>
+</html>
