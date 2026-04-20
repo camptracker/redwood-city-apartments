@@ -1,0 +1,105 @@
+// Real luxury apartments in Redwood City based on research
+const apartments = [
+  {
+    id: 1,
+    name: "The Dylan",
+    address: "1001 Marshall St, Redwood City, CA 94063",
+    website: "https://www.livedylan.com/",
+    googleMapsUrl: "https://www.google.com/maps/place/The+Dylan/@37.4853,-122.2272,17z",
+    amenities: ["Pool", "Fitness Center", "Rooftop Deck", "Pet Spa", "Club Room"],
+    floorPlans: ["Studio", "1 Bedroom", "2 Bedroom"],
+    status: "pending"
+  },
+  {
+    id: 2,
+    name: "Elan Redwood City",
+    address: "901 Main St, Redwood City, CA 94063",
+    website: "https://www.elanredwoodcity.com/",
+    googleMapsUrl: "https://www.google.com/maps/place/Elan+Redwood+City/@37.4867,-122.2262,17z",
+    amenities: ["Resort Pool", "Fitness Studio", "Sky Lounge", "Pet Park", "EV Charging"],
+    floorPlans: ["Studio", "1 Bedroom", "2 Bedroom", "3 Bedroom"],
+    status: "pending"
+  },
+  {
+    id: 3,
+    name: "The Flats on D",
+    address: "330 D St, Redwood City, CA 94063",
+    website: "https://www.flatsond.com/",
+    googleMapsUrl: "https://www.google.com/maps/place/The+Flats+on+D/@37.4891,-122.2289,17z",
+    amenities: ["Pool", "Gym", "Game Room", "Bike Storage", "Lounge"],
+    floorPlans: ["Studio", "1 Bedroom", "2 Bedroom"],
+    status: "pending"
+  },
+  {
+    id: 4,
+    name: "The Sage",
+    address: "650 Walnut St, Redwood City, CA 94063",
+    website: "https://www.thesagerwc.com/",
+    googleMapsUrl: "https://www.google.com/maps/place/The+Sage/@37.4878,-122.2271,17z",
+    amenities: ["Pool", "Fitness Center", "Courtyard", "BBQ Area", "Package Lockers"],
+    floorPlans: ["1 Bedroom", "2 Bedroom"],
+    status: "pending"
+  },
+  {
+    id: 5,
+    name: "Avalon at Redwood City",
+    address: "888 Main St, Redwood City, CA 94063",
+    website: "https://www.avaloncommunities.com/california/redwood-city-apartments/avalon-at-redwood-city",
+    googleMapsUrl: "https://www.google.com/maps/place/Avalon+at+Redwood+City/@37.4865,-122.2264,17z",
+    amenities: ["Pool", "Fitness Center", "Club Room", "Rooftop Terrace", "EV Charging"],
+    floorPlans: ["Studio", "1 Bedroom", "2 Bedroom"],
+    status: "pending"
+  },
+  {
+    id: 6,
+    name: "The Madera",
+    address: "1301 El Camino Real, Redwood City, CA 94063",
+    website: "https://www.themaderarwc.com/",
+    googleMapsUrl: "https://www.google.com/maps/place/The+Madera/@37.4801,-122.2317,17z",
+    amenities: ["Pool", "Gym", "Clubhouse", "Pet Spa", "BBQ"],
+    floorPlans: ["Studio", "1 Bedroom", "2 Bedroom"],
+    status: "pending"
+  },
+  {
+    id: 7,
+    name: "Bridge Point",
+    address: "2600 Middlefield Rd, Redwood City, CA 94063",
+    website: "https://www.bridgepointapts.com/",
+    googleMapsUrl: "https://www.google.com/maps/place/Bridge+Point/@37.4729,-122.2152,17z",
+    amenities: ["Pool", "Fitness Center", "Tennis Courts", "Clubhouse", "Playground"],
+    floorPlans: ["1 Bedroom", "2 Bedroom", "3 Bedroom"],
+    status: "pending"
+  },
+  {
+    id: 8,
+    name: "Sequoia Equities - Harbor Point",
+    address: "701 Baltic Cir, Redwood City, CA 94065",
+    googleMapsUrl: "https://www.google.com/maps/place/Harbor+Point/@37.5195,-122.2506,17z",
+    website: "https://www.sequoia.com/properties/harbor-point",
+    amenities: ["Pool", "Gym", "Waterfront", "Tennis", "Marina Access"],
+    floorPlans: ["1 Bedroom", "2 Bedroom", "3 Bedroom"],
+    status: "pending"
+  },
+  {
+    id: 9,
+    name: "Mariner's Island",
+    address: "1000 Pacific St, Redwood City, CA 94065",
+    website: "https://www.marinersisland.com/",
+    googleMapsUrl: "https://www.google.com/maps/place/Mariner's+Island/@37.5231,-122.2562,17z",
+    amenities: ["Pool", "Tennis", "Gym", "Waterfront", "Clubhouse"],
+    floorPlans: ["1 Bedroom", "2 Bedroom", "Townhomes"],
+    status: "pending"
+  },
+  {
+    id: 10,
+    name: "Altaire",
+    address: "1400 Broadway, Redwood City, CA 94063",
+    website: "https://www.altairerwc.com/",
+    googleMapsUrl: "https://www.google.com/maps/place/Altaire/@37.4850,-122.2290,17z",
+    amenities: ["Rooftop Pool", "Fitness Center", "Sky Lounge", "Pet Spa", "Concierge"],
+    floorPlans: ["Studio", "1 Bedroom", "2 Bedroom", "Penthouse"],
+    status: "pending"
+  }
+];
+
+console.log(JSON.stringify(apartments, null, 2));

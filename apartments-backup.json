@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "name": "Marina Shores",
+    "address": "555 Twin Dolphin Dr, Redwood City, CA 94065",
+    "website": "https://www.marinashoreapts.com",
+    "googleMapsUrl": "https://maps.google.com/?q=Marina+Shores+Redwood+City",
+    "amenities": [],
+    "floorPlans": [],
+    "status": "pending"
+  },
+  {
+    "id": 2,
+    "name": "The Dylan",
+    "address": "1001 Marshall St, Redwood City, CA 94063",
+    "website": "https://www.livedylan.com",
+    "googleMapsUrl": "https://maps.google.com/?q=The+Dylan+Redwood+City",
+    "amenities": [],
+    "floorPlans": [],
+    "status": "pending"
+  },
+  {
+    "id": 3,
+    "name": "Elan Redwood City",
+    "address": "901 Main St, Redwood City, CA 94063",
+    "website": "https://www.elanredwoodcity.com",
+    "googleMapsUrl": "https://maps.google.com/?q=Elan+Redwood+City",
+    "amenities": [],
+    "floorPlans": [],
+    "status": "pending"
+  },
+  {
+    "id": 4,
+    "name": "Flats on D",
+    "address": "330 D St, Redwood City, CA 94063",
+    "website": "https://www.flatsond.com",
+    "googleMapsUrl": "https://maps.google.com/?q=Flats+on+D+Redwood+City",
+    "amenities": [],
+    "floorPlans": [],
+    "status": "pending"
+  },
+  {
+    "id": 5,
+    "name": "The Sage",
+    "address": "650 Walnut St, Redwood City, CA 94063",
+    "website": "https://www.thesagerwc.com",
+    "googleMapsUrl": "https://maps.google.com/?q=The+Sage+Redwood+City",
+    "amenities": [],
+    "floorPlans": [],
+    "status": "pending"
+  },
+  {
+    "id": 6,
+    "name": "Sares Regis Group - Enclave",
+    "address": "700 Middlefield Rd, Redwood City, CA 94063",
+    "website": "https://www.enclaveapartments.com",
+    "googleMapsUrl": "https://maps.google.com/?q=Enclave+Apartments+Redwood+City",
+    "amenities": [],
+    "floorPlans": [],
+    "status": "pending"
+  },
+  {
+    "id": 7,
+    "name": "Avalon at Redwood City",
+    "address": "888 Main St, Redwood City, CA 94063",
+    "website": "https://www.avaloncommunities.com/california/redwood-city-apartments",
+    "googleMapsUrl": "https://maps.google.com/?q=Avalon+Redwood+City",
+    "amenities": [],
+    "floorPlans": [],
+    "status": "pending"
+  },
+  {
+    "id": 8,
+    "name": "The Madera",
+    "address": "1301 El Camino Real, Redwood City, CA 94063",
+    "website": "https://www.themaderarwc.com",
+    "googleMapsUrl": "https://maps.google.com/?q=The+Madera+Redwood+City",
+    "amenities": [],
+    "floorPlans": [],
+    "status": "pending"
+  },
+  {
+    "id": 9,
+    "name": "Bridge Point",
+    "address": "2600 Middlefield Rd, Redwood City, CA 94063",
+    "website": "https://www.bridgepointapts.com",
+    "googleMapsUrl": "https://maps.google.com/?q=Bridge+Point+Apartments+Redwood+City",
+    "amenities": [],
+    "floorPlans": [],
+    "status": "pending"
+  },
+  {
+    "id": 10,
+    "name": "Redwood Shores",
+    "address": "575 Baltic Cir, Redwood City, CA 94065",
+    "website": "https://www.redwoodshoreapts.com",
+    "googleMapsUrl": "https://maps.google.com/?q=Redwood+Shores+Apartments",
+    "amenities": [],
+    "floorPlans": [],
+    "status": "pending"
+  }
+]
