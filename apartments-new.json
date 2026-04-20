@@ -6,13 +6,16 @@
     "website": "https://www.livedylan.com/",
     "googleMapsUrl": "https://www.google.com/maps/place/The+Dylan/@37.4853,-122.2272,17z",
     "amenities": [
-      "amenity-1.jpg",
-      "amenity-2.jpg",
-      "amenity-3.jpg"
+      "Pool",
+      "Fitness Center",
+      "Rooftop Deck",
+      "Pet Spa",
+      "Club Room"
     ],
     "floorPlans": [
-      "plan-1.jpg",
-      "plan-2.jpg"
+      "Studio",
+      "1 Bedroom",
+      "2 Bedroom"
     ],
     "status": "pending"
   },
@@ -23,13 +26,17 @@
     "website": "https://www.elanredwoodcity.com/",
     "googleMapsUrl": "https://www.google.com/maps/place/Elan+Redwood+City/@37.4867,-122.2262,17z",
     "amenities": [
-      "amenity-1.jpg",
-      "amenity-2.jpg",
-      "amenity-3.jpg"
+      "Resort Pool",
+      "Fitness Studio",
+      "Sky Lounge",
+      "Pet Park",
+      "EV Charging"
     ],
     "floorPlans": [
-      "plan-1.jpg",
-      "plan-2.jpg"
+      "Studio",
+      "1 Bedroom",
+      "2 Bedroom",
+      "3 Bedroom"
     ],
     "status": "pending"
   },
@@ -40,13 +47,16 @@
     "website": "https://www.flatsond.com/",
     "googleMapsUrl": "https://www.google.com/maps/place/The+Flats+on+D/@37.4891,-122.2289,17z",
     "amenities": [
-      "amenity-1.jpg",
-      "amenity-2.jpg",
-      "amenity-3.jpg"
+      "Pool",
+      "Gym",
+      "Game Room",
+      "Bike Storage",
+      "Lounge"
     ],
     "floorPlans": [
-      "plan-1.jpg",
-      "plan-2.jpg"
+      "Studio",
+      "1 Bedroom",
+      "2 Bedroom"
     ],
     "status": "pending"
   },
@@ -57,13 +67,15 @@
     "website": "https://www.thesagerwc.com/",
     "googleMapsUrl": "https://www.google.com/maps/place/The+Sage/@37.4878,-122.2271,17z",
     "amenities": [
-      "amenity-1.jpg",
-      "amenity-2.jpg",
-      "amenity-3.jpg"
+      "Pool",
+      "Fitness Center",
+      "Courtyard",
+      "BBQ Area",
+      "Package Lockers"
     ],
     "floorPlans": [
-      "plan-1.jpg",
-      "plan-2.jpg"
+      "1 Bedroom",
+      "2 Bedroom"
     ],
     "status": "pending"
   },
@@ -74,13 +86,16 @@
     "website": "https://www.avaloncommunities.com/california/redwood-city-apartments/avalon-at-redwood-city",
     "googleMapsUrl": "https://www.google.com/maps/place/Avalon+at+Redwood+City/@37.4865,-122.2264,17z",
     "amenities": [
-      "amenity-1.jpg",
-      "amenity-2.jpg",
-      "amenity-3.jpg"
+      "Pool",
+      "Fitness Center",
+      "Club Room",
+      "Rooftop Terrace",
+      "EV Charging"
     ],
     "floorPlans": [
-      "plan-1.jpg",
-      "plan-2.jpg"
+      "Studio",
+      "1 Bedroom",
+      "2 Bedroom"
     ],
     "status": "pending"
   },
@@ -91,13 +106,16 @@
     "website": "https://www.themaderarwc.com/",
     "googleMapsUrl": "https://www.google.com/maps/place/The+Madera/@37.4801,-122.2317,17z",
     "amenities": [
-      "amenity-1.jpg",
-      "amenity-2.jpg",
-      "amenity-3.jpg"
+      "Pool",
+      "Gym",
+      "Clubhouse",
+      "Pet Spa",
+      "BBQ"
     ],
     "floorPlans": [
-      "plan-1.jpg",
-      "plan-2.jpg"
+      "Studio",
+      "1 Bedroom",
+      "2 Bedroom"
     ],
     "status": "pending"
   },
@@ -108,13 +126,16 @@
     "website": "https://www.bridgepointapts.com/",
     "googleMapsUrl": "https://www.google.com/maps/place/Bridge+Point/@37.4729,-122.2152,17z",
     "amenities": [
-      "amenity-1.jpg",
-      "amenity-2.jpg",
-      "amenity-3.jpg"
+      "Pool",
+      "Fitness Center",
+      "Tennis Courts",
+      "Clubhouse",
+      "Playground"
     ],
     "floorPlans": [
-      "plan-1.jpg",
-      "plan-2.jpg"
+      "1 Bedroom",
+      "2 Bedroom",
+      "3 Bedroom"
     ],
     "status": "pending"
   },
@@ -125,13 +146,16 @@
     "googleMapsUrl": "https://www.google.com/maps/place/Harbor+Point/@37.5195,-122.2506,17z",
     "website": "https://www.sequoia.com/properties/harbor-point",
     "amenities": [
-      "amenity-1.jpg",
-      "amenity-2.jpg",
-      "amenity-3.jpg"
+      "Pool",
+      "Gym",
+      "Waterfront",
+      "Tennis",
+      "Marina Access"
     ],
     "floorPlans": [
-      "plan-1.jpg",
-      "plan-2.jpg"
+      "1 Bedroom",
+      "2 Bedroom",
+      "3 Bedroom"
     ],
     "status": "pending"
   },
@@ -142,13 +166,16 @@
     "website": "https://www.marinersisland.com/",
     "googleMapsUrl": "https://www.google.com/maps/place/Mariner's+Island/@37.5231,-122.2562,17z",
     "amenities": [
-      "amenity-1.jpg",
-      "amenity-2.jpg",
-      "amenity-3.jpg"
+      "Pool",
+      "Tennis",
+      "Gym",
+      "Waterfront",
+      "Clubhouse"
     ],
     "floorPlans": [
-      "plan-1.jpg",
-      "plan-2.jpg"
+      "1 Bedroom",
+      "2 Bedroom",
+      "Townhomes"
     ],
     "status": "pending"
   },
@@ -159,13 +186,17 @@
     "website": "https://www.altairerwc.com/",
     "googleMapsUrl": "https://www.google.com/maps/place/Altaire/@37.4850,-122.2290,17z",
     "amenities": [
-      "amenity-1.jpg",
-      "amenity-2.jpg",
-      "amenity-3.jpg"
+      "Rooftop Pool",
+      "Fitness Center",
+      "Sky Lounge",
+      "Pet Spa",
+      "Concierge"
     ],
     "floorPlans": [
-      "plan-1.jpg",
-      "plan-2.jpg"
+      "Studio",
+      "1 Bedroom",
+      "2 Bedroom",
+      "Penthouse"
     ],
     "status": "pending"
   }

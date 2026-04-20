@@ -20,5 +20,8 @@
   "homepage": "https://github.com/camptracker/redwood-city-apartments#readme",
   "devDependencies": {
     "gh-pages": "^6.3.0"
+  },
+  "dependencies": {
+    "playwright": "^1.59.1"
   }
 }
